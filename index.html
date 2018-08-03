@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Header -->
+<head>
+	<title>Vicente's Portfolio</title>
+	  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+      <link rel='stylesheet' href='https://www.w3schools.com/lib/w3.css'>
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+	  <link rel="stylesheet" href="style.css">	
+</head>
+
+<!-- Body -->
+<body>
+
+<div class="w3-top">
+  <ul class="w3-navbar" id="myNavbar">
+    <li><a href="#" class="w3-padding-large">Vicente</a></li>
+    <li class="w3-hide-small w3-right">
+      <a href="#contact" class="w3-padding-large">Contacto</a>
+    </li>
+    <li class="w3-hide-small w3-right">
+      <a href="#blog" class="w3-padding-large">Blog</a>
+    </li>
+    <li class="w3-hide-small w3-right">
+      <a href="#portfolio" class="w3-padding-large">Portafolio</a>
+    </li>
+    <li class="w3-hide-small w3-right">
+      <a href="#about" class="w3-padding-large">Acercate</a>
+    </li>
+
+  </ul>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+
+<div class="bgimg-1 w3-display-container">
+	  <div class="w3-display-middle box">
+		<h1 class="text">VICENTE LITVAK</h1>
+	  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-display-container w3-padding-64" id="about">
+  <h2 class="w3-center">SOBRE MI </h2>
+  	<div class="w3-row">
+  	     
+ 		 <!--  Profile Picture and Description  -->
+     	 <div class="w3-third w3-container">
+       	     <img src="yo.png" id="profile" class="w3-circle w3-image" alt="Photo of Me">
+         </div>
+    	 <div class="w3-twothird w3-container">
+    	 	 <p class="w3-right-align"><em>Guía Astrónomo y Programador Web </em></p>
+  	     	 <p class="w3-right-align">Con la mente puesta en las grandes preguntas, siempre gravité hacia la ciencia y el entindimiento del cosmos lo que me llevó al mágico desierto de Atacama a compartir mi conocimiento astrónomico en el obsevatorio donde actualmente trabajo, Alarkapin. Al mismo tiempo me dedico al diseño de páginas web y ofrezco variados servicios en implementaciones tecnológicas.</p>
+  	     </div>
+    </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container" id="portfolio">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">PORTAFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h2 class="w3-center">Desarrollo Web</h2>
+  <p class="w3-center"><em>Me dedico tanto a la parte del diseño web como al back-end usando las diversas herramientas que ofrece Google Cloud para escalar el rendimiento de tu empresa sin gastar de más.<br><br> </em>
+  Aquí mis primeras páginas</p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+     <div class="">
+     	 <a target="_blank" href="https://www.alarkapin.cl" class="w3-center ">
+            <img src="http://alarkapin.cl/wp-content/uploads/2016/11/al-300x123.png"style="width:25%" class="w3-hover-opacity w3-black w3-center w3-image">
+         </a>
+     </div>
+  </div>	
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" style="max-width:100%">
+  </div>
+</div>
+
+<!-- Tercer Parallax Image with Blog Text -->
+<div class="bgimg-4 w3-display-container" id="blog">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">BLOG</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" >
+	<h2 class="w3-center"> Ensayos </h2>
+	<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" style="max-width:100%">
+  </div>
+</div>
+	</div>
+
+<!-- Cuarto Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container" id="contact">
+  <div class="w3-display-middle">
+    <h2 class="w3-xxlarge w3-text-light-grey w3-wide">CONTACTO</h2>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">AQUÍ ME ENCUENTRAN</h3>
+  <p class="w3-center"><em>Mirando por una ventana hacia el universo</em></p>
+
+  <address class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large"></div>
+    </div>
+    <div class="w3-col m8 w3-container w3-section">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i> San Pedro de Atacama, Chile<br>
+        <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Celular: +56935134669<br>
+        <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: vicente.litvak@gmail.com<br>
+      </div>
+      <p>Para más informacion, cotizaciones o simplemente para pasar a saludar:</p>
+      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="w3-half">
+          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name">
+        </div>
+        <div class="w3-half">
+          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
+        </div>
+      </div>
+      <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
+      <a href="mailto:vicente.litvak@gmail.com" class="w3-btn w3-section w3-right">SEND</a>
+    </div>
+  </address>
+</div>
+</body>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-dark-grey  w3-hover-black cf social-footer">
+    <a target="_blank" href="https://www.linkedin.com/in/vicente-litvak-124395142/">
+      <i class="fa fa-linkedin fa-2x"></i>
+    </a>
+    <a target="_blank" href="https://www.facebook.com/vicente.litvak">
+      <i class="fa fa-facebook fa-2x"></i>
+    </a>
+    <a target="_blank" href="https://www.instagram.com/vicholitvak">
+      <i class="fa fa-instagram fa-2x"></i>
+    </a>
+    <a target ="_blank" href="https://github.com/vicholitvak">
+    	<i class="fa fa-github fa-2x"></i>
+    </a>
+  
+
+    <script src='https://maps.googleapis.com/maps/api/js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js'></script>
+	<script type="text/javascript" src="script.js"></script>
+
+
+</footer>
+</html>
